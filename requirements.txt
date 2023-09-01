@@ -1,0 +1,4 @@
+bitsandbytes
+peft
+scipy
+torch
