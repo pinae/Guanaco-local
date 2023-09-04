@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+#url = "https://download.pytorch.org/whl/nightly/cu121"
+url = "https://download.pytorch.org/whl/cu118"
+verify_ssl = true
+name = "torch"
+
+[packages]
+bitsandbytes = "*"
+peft = "*"
+scipy = "*"
+accelerate = "*"
+transformers = {extras = ["torch"], version = "*"}
+torch = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+
+[pipenv]
+allow_prereleases = true
